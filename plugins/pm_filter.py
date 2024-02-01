@@ -119,8 +119,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'👇 𝘠ᴏᴜʀ 𝘍ɪʟᴇ𝘴 𝘙𝙴𝙰𝙳𝚈 𝘕𝙾𝚆 👇', 'tips')              
             ]
             )
 
@@ -1318,8 +1317,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'👇 𝘠ᴏᴜʀ 𝘍ɪʟᴇ𝘴 𝘙𝙴𝙰𝙳𝚈 𝘕𝙾𝚆 👇', 'tips')              
             ]
             )
 
@@ -1338,8 +1336,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'👇 𝘠ᴏᴜʀ 𝘍ɪʟᴇ𝘴 𝘙𝙴𝙰𝙳𝚈 𝘕𝙾𝚆 👇', 'tips')            
             ]
             )
 
