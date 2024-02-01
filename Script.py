@@ -215,10 +215,16 @@ Name <b>: {}</b>
 Message <b>: {}</b>"""
 
     CAPTION = """
-📂 <b>File Name</b>: <code>{file_name}</code> 
+<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
 
-❤️‍🔥 </b>Join</b> [𝗕𝗟𝗔𝗦𝗧𝗘𝗥 𝗟𝗜𝗡𝗞𝗭](https://t.me/blaster_linkz)  
-"""
+
+<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{file_size}</b>
+
+╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+♻️ 𝙅𝙊𝙄𝙉 :- <a href=https://t.me/ARAKAL_THERAVAD_MOVIESS> GROUP </a>
+♻️ 𝙅𝙊𝙄𝙉 :- <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIES> OTT UPDATES </a>
+♻️ 𝙅𝙊𝙄𝙉 :- <a href=https://t.me/ARAKAL_THERAVAD_GROUP_LINKS> CHANNEL</a>
+╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
 🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> 
