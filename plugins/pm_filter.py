@@ -1293,7 +1293,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔖{get_size(file.file_size)}🔮{file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂{get_size(file.file_size)}➢{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1317,7 +1317,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'👇 𝘠ᴏᴜʀ 𝘍ɪʟᴇ𝘴 𝘙𝙴𝙰𝙳𝚈 𝘕𝙾𝚆 👇', 'tips')              
+                InlineKeyboardButton(f'👇 𝗬𝙾𝚄𝚁 𝗙ɪʟᴇꜱ 𝗥ᴇᴀᴅʏ 𝗡ᴏᴡ 👇', 'tips')              
             ]
             )
 
@@ -1336,7 +1336,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'👇 𝘠ᴏᴜʀ 𝘍ɪʟᴇ𝘴 𝘙𝙴𝙰𝙳𝚈 𝘕𝙾𝚆 👇', 'tips')            
+                InlineKeyboardButton(f'👇 𝗬𝙾𝚄𝚁 𝗙ɪʟᴇꜱ 𝗥ᴇᴀᴅʏ 𝗡ᴏᴡ 👇', 'tips')            
             ]
             )
 
