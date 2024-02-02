@@ -67,7 +67,11 @@ IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '📂 <b>File Name</b>: <code>{file_name}</code> \n\n❤️‍🔥 <b>Join</b> [𝗕𝗟𝗔𝗦𝗧𝗘𝗥 𝗟𝗜𝗡𝗞𝗭](https://t.me/ARAKAL_THERAVAD_MOVIES)')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '📂 <b>File Name</b>: <code>{file_name}</code> \n\n ⚙️ Fɪʟᴇ Sɪᴢᴇ : {file_size} \n\n ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+♻️ 𝙅𝙊𝙄𝙉 :- <a href=https://t.me/ARAKAL_THERAVAD_MOVIESS> GROUP </a>
+♻️ 𝙅𝙊𝙄𝙉 :- <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIES> OTT UPDATES </a>
+♻️ 𝙅𝙊𝙄𝙉 :- <a href=https://t.me/ARAKAL_THERAVAD_GROUP_LINKS> CHANNEL</a>
+╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>)')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '')
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", '🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [[ARAKAL THERAVAD MOVIES]](https://t.me/ARAKAL_THERAVAD_MOVIES)')
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
