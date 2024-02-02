@@ -67,11 +67,11 @@
             "value": "Telegram_files",
             "required": false
         },
-        "DATABASE_NAME": {
+        "SUPPORT_CHAT_ID": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
             "required": false
         },
-        "DATABASE_NAME": {
+        "REQST_CHANNEL_ID": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
             "required": false
         }
