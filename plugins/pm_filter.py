@@ -1348,10 +1348,10 @@ async def auto_filter(client, msg, spoll=False):
             ])
             
                              
-    btn.insert(1, [
+    btn.insert(2, [
         InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
     ])
-    btn.insert(0, [
+    btn.insert(1, [
         InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'rkbtn'),
         InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'rkbtn'),
         InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'rkbtn')
@@ -1383,7 +1383,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🎬 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎬", url=f"https://t.me/+uQOla1WdGw80MmI1")]
         )
-    imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
+    imdb = await get_poster(search, file=(files[3]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
         cap = TEMPLATE.format(
