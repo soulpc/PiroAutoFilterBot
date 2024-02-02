@@ -1348,13 +1348,12 @@ async def auto_filter(client, msg, spoll=False):
             ])
             
                       
-    btn.insert(1, [
-        InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
-    ])
-    btn.insert(3, [
-        InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
+    
     ])
     btn.insert(2, [
+        InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
+    ])
+    btn.insert(1, [
         InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'rkbtn'),
         InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'rkbtn'),
         InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'rkbtn')
