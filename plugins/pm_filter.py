@@ -1317,7 +1317,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'👇 𝗬𝙾𝚄𝚁 𝗙ɪʟᴇꜱ 𝗥ᴇᴀᴅʏ 𝗡ᴏᴡ 👇', 'tips')              
+                InlineKeyboardButton(f'👇 𝐘𝐎𝐔𝐑 𝐅𝐈𝐋𝐄𝐒 𝐑𝐄𝐃𝐘 𝐍𝐎𝐖 👇', 'tips')              
             ]
             )
 
@@ -1336,7 +1336,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'👇 𝗬𝙾𝚄𝚁 𝗙ɪʟᴇꜱ 𝗥ᴇᴀᴅʏ 𝗡ᴏᴡ 👇', 'tips')            
+                InlineKeyboardButton(f'👇 𝐘𝐎𝐔𝐑 𝐅𝐈𝐋𝐄𝐒 𝐑𝐄𝐃𝐘 𝐍𝐎𝐖 👇', 'tips')            
             ]
             )
 
@@ -1379,7 +1379,7 @@ async def auto_filter(client, msg, spoll=False):
                 )
     else:
         btn.append(
-            [InlineKeyboardButton(text="❌ 𝖭𝗈 𝖬𝗈𝗋𝖾 𝖯𝖺𝗀𝖾𝗌 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 ! ❌",callback_data="pages")]
+            [InlineKeyboardButton(text="🎬 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏 🎬", url=f"https://t.me/+uQOla1WdGw80MmI1}")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
