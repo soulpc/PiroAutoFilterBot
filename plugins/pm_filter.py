@@ -1339,7 +1339,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'👇 𝐘𝐎𝐔𝐑 𝐅𝐈𝐋𝐄𝐒 𝐑𝐄𝐃𝐘 𝐍𝐎𝐖 👇', 'tips')            
+                InlineKeyboardButton(f'👇 𝐘𝐎𝐔𝐑 𝐅𝐈𝐋𝐄𝐒 𝐑𝐄𝐃𝐘 𝐍𝐎𝐖 👇', 'best')            
             ]
             )
 
@@ -1355,7 +1355,7 @@ async def auto_filter(client, msg, spoll=False):
         InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
     ])
     btn.insert(1, [
-        InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'best'),
+        InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'rkbtn'),
         InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tips'),
         InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'info')
     ])
