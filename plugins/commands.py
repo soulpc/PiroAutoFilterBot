@@ -66,6 +66,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
+    
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
@@ -74,12 +75,13 @@ async def start(client, message):
             return
         btn = [
             [
-                InlineKeyboardButton(
-                    "🤖 𝖩𝗈𝗂𝗇 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🤖", url=f"https://t.me/+tHzYjWS7bYw2ZGQ1"),                
+                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link)
+            ],[
+                InlineKeyboardButton('🤔 Why Iam Join🤔', callback_data='sinfo')
             ]
         ]
 
-        if message.command[1] != "subscribe" or message.command[1] != "send_all":
+        if message.command[1] != "subscribe":
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
