@@ -13,7 +13,6 @@ from logging import getLogger
 
 logger = getLogger(__name__)
 INVITE_LINK = None
-db = JoinReqs
 
 async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="checksub"):
 
