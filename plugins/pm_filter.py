@@ -893,6 +893,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == 'rkbtn':
         search = query.message.text
+        ident, req, key, offset = query.data.split("_")
         files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=offset, filter=True)
 #        files, offset, total_results = await get_search_results(query.message.chat.id, offset=0, filter=True)
         searchh = query.message.text
