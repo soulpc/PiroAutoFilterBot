@@ -115,38 +115,45 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-    data = message.command[1]
-    try:
-        pre, file_id = data.split('_', 1)
-    except:
-        file_id = data
-        pre = ""
-        
-    if data.startswith("all"):
-        _, key, pre = data.split("_", 2)
-        files = temp.FILES_IDS.get(key)
-        if not files:
-            return await message.reply('<b><i>No such file exist.</b></i>')
-        
-        for file in files:
-            title = file.file_name
-            size=get_size(file.file_size)
-            f_caption=file.caption
-            if CUSTOM_FILE_CAPTION:
-                try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
-                except:
-                    f_caption=f_caption
-            if f_caption is None:
-                f_caption = f"{file.file_name}"
-            await client.send_cached_media(
-                chat_id=message.from_user.id,
-                file_id=file.file_id,
-                caption=f_caption,
-                protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⭕️ 𝗚𝗘𝗧 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞𝗦 ⭕️', url="https://t.me/ARAKAL_THERAVAD_GROUP_LINKS") ] ] ),
-            )
+    kk, file_id = message.command[1].split("_", 1) if "_" in message.command[1] else (False, False)
+    pre = ('checksubp' if kk == 'filep' else 'checksub') if kk else False
+
+    status = await ForceSub(client, message, file_id=file_id, mode=pre)
+    if not status:
+          return
+
+    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "start", "hehe"]:
+        if message.command[1] == "subscribe":
+            await ForceSub(client, message)
+            return
+    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
+        buttons = [[
+            InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        a = await message.reply_text(
+            text="● ◌ ◌"
+        )
+        await asyncio.sleep(0.2)
+        b = await a.edit(
+            text="● ● ◌"
+        )
+        await asyncio.sleep(0.2)
+        c = await b.edit(
+            text="● ● ●"
+        )
+        await asyncio.sleep(0.6)
+        await c.delete()
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
         return
+    data = message.command[1]
+    if not file_id:
+        file_id = data
     
     if data.split("-", 1)[0] == "BATCH":
         sts = await message.reply("<b>Please wait...</b>")
