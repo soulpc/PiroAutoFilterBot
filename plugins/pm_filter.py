@@ -893,7 +893,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == 'rkbtn':
         search = query.message.text
-        files, offset, total_results = await get_search_results(query.message.chat.id ,search.lower(), offset=0, filter=True)
+        files, offset, total_results = await get_search_results(query.message.chat.id, offset=0, filter=True)
         searchh = query.message.text
         await query.answer("🌐 𝗛ყყ :- {query.message.from_user.mention} \n\n🎬 𝑀𝑜𝑣𝑖𝑒 𝑁𝑎𝑚𝑒 :- {searchh} \n\n📁 𝑭𝒊𝒍𝒆𝒔 :- {total_results} \n\n💎 താഴെ കാണുന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്താൽ ഫയൽ കിട്ടും.\n\n🎈𝐶𝑖𝑙𝑐𝑘 𝑂𝑛 𝑇ℎ𝑒 𝐵𝑢𝑡𝑡𝑜𝑛 𝐵𝑒𝑙𝑜𝑤 𝑇𝑜 𝐺𝑒𝑡 𝑇ℎ𝑒 𝐹𝑖𝑙𝑒. """, show_alert=True)
 
