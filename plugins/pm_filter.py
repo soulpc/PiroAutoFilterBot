@@ -147,8 +147,9 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'best'),
+                InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tips'),
+                InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'info')
             ]
             )
     try:
