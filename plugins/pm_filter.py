@@ -120,7 +120,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'👇 𝗬𝙾𝚄𝚁 𝗙ɪʟᴇꜱ 𝗥ᴇᴀᴅʏ 𝗡ᴏᴡ 👇', 'rkbtn')              
+                InlineKeyboardButton(f'👇 𝐘𝐎𝐔𝐑 𝐅𝐈𝐋𝐄𝐒 𝐑𝐄𝐃𝐘 𝐍𝐎𝐖 👇', 'rkbtn')              
             ]
             )
 
