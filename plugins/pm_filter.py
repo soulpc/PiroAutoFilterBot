@@ -145,7 +145,7 @@ async def next_page(bot, query):
             )
 
         else:
-            btn.insert(0, 
+            btn.insert(2, 
             [
                 InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'best'),
                 InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tips'),
@@ -242,9 +242,9 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
+        InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
     ])
-    btn.insert(2, [
+    btn.insert(1, [
         InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
     ])
     try:
